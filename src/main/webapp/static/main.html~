@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        h2 {
+            margin-bottom: 20px;
+        }
+        .response {
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>Главная страница</h2>
+    <!-- Отображение ответа -->
+    <div class="response">
+        <!-- JavaScript будет вставлять сюда ответ -->
+    </div>
+</div>
+
+<script>
+        // Получение параметра ответа из URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const response = urlParams.get('response');
+
+        // Отображение ответа на странице
+        const responseElement = document.querySelector('.response');
+        responseElement.textContent = response;
+    </script>
+</body>
+</html>

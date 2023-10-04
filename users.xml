@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<users>
+    <user>
+        <lastname>admin</lastname>
+        <firstname>admin</firstname>
+        <code>admin</code>
+        <login>admin</login>
+        <password>admin</password>
+        <role>Administrator</role>
+    </user>
+
+    <user>
+        <lastname>Ivan</lastname>
+        <firstname>Ivanov</firstname>
+        <code>user</code>
+        <login>ivan2008</login>
+        <password>12345678</password>
+        <role>User</role>
+    </user>
+</users>
